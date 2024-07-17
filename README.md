@@ -19,6 +19,8 @@ Data Preprocessing:
 4) Histogram of oriented gradients (HOG): Capture edge and shape information in images by computing the distribution of gradient orientations.
    
 5) Principal component analysis (PCA): Reduce the dimensionality of large datasets by transforming the large set of features into a smaller one while still retaining most of the information.
+   
+--------------------------------------------------------------------------------------------------------------------------------
 
 Individual Model Parameter Tuning:
 1) Random Search
@@ -43,7 +45,9 @@ Individual Model Parameter Tuning:
 
 Machine Learning Ensemble Model:
 - **Stacking, Voting, and Bagging Ensemble model was proposed further to improve the image classification on the CIFAR-10 dataset to overcome the limitation of the baseline model in classifying images.**
-  
+
+--------------------------------------------------------------------------------------------------------------------------------
+
 Training parameters for Voting and Stacking model: LGBM-KNN
 LGBMClassifier
 - learning_rate=0.02375374380489134
@@ -91,10 +95,19 @@ Deep Learning Models:
 - Hybrid CNN+ANN
 - Hybrid CNN + ML (LGBM + SVM)
 
+--------------------------------------------------------------------------------------------------------------------------------
+
 Results:
 1) Individual Models
-   
+
+   - Scale Results
+     
 ![image](https://github.com/user-attachments/assets/d699d290-eb07-4122-a7d1-9f128436e275)
+
+   - HOG
+     
+   ![image](https://github.com/user-attachments/assets/34fed824-098c-4305-ac61-4ca0293dbbdd)
+
 
 3) ML Ensemble Models
    
@@ -109,6 +122,8 @@ Comparison of Top 3 Individual Model and Best Ensemble Model - Accuracy Scores
    ![image](https://github.com/user-attachments/assets/4f0fae25-ffeb-4c0b-a5a8-1d08667b72c7)
 
 **Final: The testing accuracy of the CNN model with Reinforcement Learning is 84.77%. It is the highest as compared to the other Hybrid and Ensemble deep learning models. This is because in this CNN model with Reinforcement Learning, a policy-based reinforcement learning algorithm, REINFORCE was used to maximise the expected reward function which is the validation accuracy.**
+
+--------------------------------------------------------------------------------------------------------------------------------
 
 Framework:
 
